@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://www.pattawee-pp.com/feed.xml" rel="self" type="application/atom+xml"/><link href="https://www.pattawee-pp.com/" rel="alternate" type="text/html" hreflang="en"/><updated>2025-05-02T02:12:21+00:00</updated><id>https://www.pattawee-pp.com/feed.xml</id><title type="html">Pattawee Puangchit</title><subtitle>&quot;Ph.D. Candidate | Trade Economist | Data Analyst | Entrepreneur. Specializing in trade policies, CGE modeling, economic analysis, and business strategy.&quot; </subtitle><entry><title type="html">U.S. Reciprocal Tariffs: A CGE Analysis of Global Economic Impacts</title><link href="https://www.pattawee-pp.com/blog/2025/us-asean-cge-static/" rel="alternate" type="text/html" title="U.S. Reciprocal Tariffs: A CGE Analysis of Global Economic Impacts"/><published>2025-04-07T00:00:00+00:00</published><updated>2025-04-07T00:00:00+00:00</updated><id>https://www.pattawee-pp.com/blog/2025/us-asean-cge-static</id><content type="html" xml:base="https://www.pattawee-pp.com/blog/2025/us-asean-cge-static/"><![CDATA[<h1 id="introduction">Introduction</h1> <p>This article uses the GTAP CGE model to analyze the impact of reciprocal tariffs on the world economy by examining key economic indicators such as real GDP, wages, and the Consumer Price Index (CPI).</p> <p>While the results are based on a static model and may not fully capture dynamic changes over time, they provide a useful illustration of the potential economic impacts of the policy. If time permits, I will include additional information and interpretation of the results in future updates.</p> <h1 id="model">Model</h1> <p>The model used in this simulation is the GTAPv7 standard CGE model. Two simulations have been conducted as follows:</p> <h2 id="scenarios">Scenarios</h2> <div class="data-source" style="max-width: 100%; margin: 0 auto; padding: 0 1rem;"> <table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif;"> <caption style="caption-side: top; color: var(--global-text-color); text-align: left; font-weight: bold; margin-bottom: 5px;"> Summary of scenarios used in this simulation. </caption> <thead> <tr style="background-color: var(--global-card-bg-color);"> <th style="text-align: left; width: 10%; padding: 8px; border-top: 2px solid var(--global-divider-color); border-bottom: 2px solid var(--global-divider-color);">No.</th> <th style="text-align: left; width: 20%; padding: 8px; border-top: 2px solid var(--global-divider-color); border-bottom: 2px solid var(--global-divider-color);">Scenario</th> <th style="text-align: left; width: 70%; padding: 8px; border-top: 2px solid var(--global-divider-color); border-bottom: 2px solid var(--global-divider-color);">Description</th> </tr> </thead> <tbody> <tr> <td style="padding: 8px; border-bottom: 1px solid var(--global-divider-color);">1</td> <td style="padding: 8px; border-bottom: 1px solid var(--global-divider-color);">US All Tariffs</td> <td style="padding: 8px; border-bottom: 1px solid var(--global-divider-color);"> The U.S. imposes all <a href="https://bodysbobb.github.io/blog/2025/us-reciprocal-tariff-measures/" target="_blank">reciprocal tariffs</a> as proposed on April 2, 2025, on all countries. </td> </tr> <tr> <td style="padding: 8px; border-bottom: 1px solid var(--global-divider-color);">2</td> <td style="padding: 8px; border-bottom: 1px solid var(--global-divider-color);">US All + Retaliation</td> <td style="padding: 8px; border-bottom: 1px solid var(--global-divider-color);"> Same as Scenario 1, but all countries retaliate against the U.S. with equivalent tariffs. </td> </tr> </tbody> </table> </div> <p><br/></p> <h2 id="model-assumptions">Model Assumptions</h2> <ul> <li>All scenarios apply shocks to tariffs (<code class="language-plaintext highlighter-rouge">tms</code>), implemented as increases in percentage points.</li> <li>Tariff shocks are applied to <strong>all sectors excluding services</strong>, to specifically analyze the impact on goods.</li> <li>The “Rest of World” (ROW) aggregated region includes all countries without a country-specific reciprocal tariff increase. Accordingly, ROW imposes a uniform 10% tariff across all scenarios.</li> </ul> <h1 id="data">Data</h1> <p>The GTAPv11c Data Base, with a reference year of 2017, is used in this analysis. The data have been aggregated to <strong>55 countries/regions and 36 sectors</strong>. The data are extracted and aggregated as shown below:</p> <div class="data-source" style="max-width: 100%; margin: 0 auto; padding: 0 1rem;"> <table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; "> <caption style="caption-side: top; color: var(--global-text-color); text-align: left; font-weight: bold; margin-bottom: 5px;"> Scenarios </caption> <thead> <tr style="background-color: var(--global-card-bg-color);"> <th style="text-align: left; padding: 8px; border-top: 2px solid var(--global-divider-color); border-bottom: 2px solid var(--global-divider-color);">Data</th> <th style="text-align: left; padding: 8px; border-top: 2px solid var(--global-divider-color); border-bottom: 2px solid var(--global-divider-color);">Year of Reference</th> <th style="text-align: left; padding: 8px; border-top: 2px solid var(--global-divider-color); border-bottom: 2px solid var(--global-divider-color);">Source</th> </tr> </thead> <tbody> <tr> <td style="padding: 8px; border-bottom: 1px solid var(--global-divider-color);">GTAP Data Base version 11c</td> <td style="padding: 8px; border-bottom: 1px solid var(--global-divider-color);">2017</td> <td style="padding: 8px; border-bottom: 1px solid var(--global-divider-color);"> <a href="https://www.gtap.agecon.purdue.edu/databases/" target="_blank">GTAP 11 Data Base</a> </td> </tr> <tr> <td style="padding: 8px; border-bottom: 1px solid var(--global-divider-color);">Tariff Shocks</td> <td style="padding: 8px; border-bottom: 1px solid var(--global-divider-color);">April 2025</td> <td style="padding: 8px; border-bottom: 1px solid var(--global-divider-color);"> <a href="https://bodysbobb.github.io/blog/2025/us-reciprocal-tariff-measures/" target="_blank">Reciprocal Tariff Measures</a> </td> </tr> </tbody> </table> </div> <h2 id="data-aggregation">Data Aggregation</h2> <p><button class="toggle-table-btn" data-target="table-container-region" data-show="Show Region Aggregation Table" data-hide="Hide Aggregation Table" style="margin-bottom: 10px; background-color: var(--global-card-bg-color); box-shadow: 0 2px 10px rgba(0,0,0,0.1); border: 1px solid var(--global-divider-color); color: var(--global-text-color); padding: 8px 16px; border-radius: 5px; cursor: pointer; text-align: left;"> Show Region Aggregation Table </button></p> <div id="table-container-region" class="table-container" style="display: none; border: none; background-color: var(--global-card-bg-color); margin: 30px 0; overflow-x: auto; border-radius: 5px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); padding: 15px;"> <div style="margin-bottom: 20px; text-align: left;"> <label for="agg-filter" style="font-weight: bold; margin-right: 10px; color: var(--global-text-color);">Select Data:</label> <select id="agg-filter" style="padding: 5px; border: 1px solid var(--global-divider-color); color: var(--global-text-color); border-radius: 4px; width: 300px;"> <option value="region_table">Region Aggregation</option> <option value="sector_table">Sector Aggregation</option> </select> </div> <div class="l-page"> <iframe id="table-frame" loading="lazy" src="/assets/blog/2025-04-07-us-asean-cge-static/region_table.html" frameborder="0" scrolling="auto"> </iframe> </div> </div> <h2 id="programs">Programs</h2> <ul> <li>The model is run using <code class="language-plaintext highlighter-rouge">rungtap</code> through the setup of CMF files.</li> <li>All visualizations and tables were created using Python for data processing and automation, Folium and GeoJSON for interactive mapping, JavaScript for dynamic tooltips and filters, and HTML/CSS for responsive, publication-ready presentation.</li> </ul> <h2 id="results">Results</h2> <p>The results presented below are shown in three formats:<br/> (1) World map<br/> (2) Bar charts highlighting the 15 most affected countries<br/> (3) Data table including all countries</p> <p>The results show the <strong>percentage change</strong> in each corresponding variable under each scenario.</p> <div class="filter-bar"> <div class="filter-row"> <div class="filter-group"> <label for="variable-filter">Select Variable:</label> <select id="variable-filter"> <option value="qgdp">Real GDP</option> <option value="pprivagmn">CPI excluding services</option> <option value="qpriv">Private Household Consumption</option> <option value="tot">Terms of Trade</option> <option value="unskbreg">Unskilled Labor Wages</option> <option value="skbreg">Skilled Labor Wages</option> <option value="qxwregagmn">Aggregated Exports</option> <option value="qmwregagmn">Aggregated Imports</option> </select> </div> <div class="filter-group"> <label for="experiment-filter">Scenario:</label> <select id="experiment-filter"> <option value="us_all">US All Tariffs</option> <option value="us_all_retaltar">US All + Retaliation</option> </select> </div> <div class="filter-group"> <label for="vis-type">View:</label> <select id="vis-type"> <option value="map">Map</option> <option value="bar_chart">Bar Chart</option> <option value="table">Data Table</option> </select> </div> <button id="reset-filters">Reset</button> </div> </div> <div class="l-page"> <iframe id="vis-frame" src="/assets/blog/2025-04-07-us-asean-cge-static/cge/qgdp_us_all_map.html" frameborder="0" scrolling="no"> </iframe> </div> <p><br/></p> <h2 id="brief-conclusion">(Brief) Conclusion</h2> <p>It is clear that the most significant impact occurs when all countries fully retaliate against the U.S. However, even without retaliation, the U.S. does not appear to benefit in terms of real GDP under any scenario.</p> <p>I plan to add more scenarios in a future article, time permitting. In the meantime, I will continue updating this article to provide a more detailed sector-level breakdown for the two existing scenarios.</p> <h2 id="acknowledgment">Acknowledgment</h2> <p>I sincerely appreciate the guidance of Dr. Erwin Corong in setting up the model using GEMPACK and for his valuable advice regarding the GTAP CGE model. I would also like to thank Dr. Maksym Chepeliev for providing me with many great opportunities to work on real-world analyses using the CGE model.</p> <h2 id="cge-tools-with-r-packages">CGE Tools with R Packages</h2> <p>I have developed a few R packages that, while not used directly in this webpage presentation, may be helpful for fellow CGE researchers:</p> <ul> <li> <p><a href="https://cran.r-project.org/web/packages/HARplus/index.html"><strong>HARplus</strong></a>: Officially available on CRAN, this package allows users to easily extract and work with multiple GEMPACK file types, including <code class="language-plaintext highlighter-rouge">.har</code> and <code class="language-plaintext highlighter-rouge">.sl4</code>, and export them to various formats.</p> </li> <li> <p><a href="https://github.com/bodysbobb/GTAPViz/"><strong>GTAPViz</strong></a>: Currently under development but already usable via GitHub installation. This package is designed for <strong>presenting GTAP model results</strong>, making it easier to compile and visualize CGE outputs through figures and plots for reporting and presentation purposes.</p> </li> </ul> <p>Feel free to check them out—and if you find them useful, please consider giving them a star! If you spot any bugs or have suggestions, I’d love to hear from you!</p> <script>
+/* === Data Table Filter === */
+document.addEventListener('DOMContentLoaded', function() {
+  const aggFilter = document.getElementById('agg-filter');
+  const tableFrame = document.getElementById('table-frame');
+
+  aggFilter.addEventListener('change', function() {
+    const selectedValue = aggFilter.value;
+    const basePath = '/assets/blog/2025-04-07-us-asean-cge-static/';
+    tableFrame.src = basePath + selectedValue + '.html';
+  });
+});
+
+/* === Map/Chart/Table Visualization Filter === */
+document.addEventListener('DOMContentLoaded', function() {
+  const visFrame = document.getElementById('vis-frame');
+  const variableFilter = document.getElementById('variable-filter');
+  const experimentFilter = document.getElementById('experiment-filter');
+  const visType = document.getElementById('vis-type');
+  const resetButton = document.getElementById('reset-filters');
+
+  const basePath = '/assets/blog/2025-04-07-us-asean-cge-static/cge/';
+
+  function generateCandidates(variable, experiment, type) {
+    return [
+      `${variable}_${experiment}_${type}.html`,
+      `${variable}_us_all_${type}.html`,
+      `${experiment}_${type}.html`,
+      `${variable}_${type}.html`,
+      `${type}.html`
+    ];
+  }
+
+  function tryLoad(index, candidates) {
+    if (index >= candidates.length) {
+      console.error('No visualization file loaded.');
+      return;
+    }
+    const src = basePath + candidates[index];
+    visFrame.src = src;
+    visFrame.onerror = () => tryLoad(index + 1, candidates);
+  }
+
+  function updateVisualization() {
+    const variable = variableFilter.value.toLowerCase();
+    const experiment = experimentFilter.value.toLowerCase();
+    const type = visType.value.toLowerCase();
+    const candidates = generateCandidates(variable, experiment, type);
+    tryLoad(0, candidates);
+  }
+
+  variableFilter.addEventListener('change', updateVisualization);
+  experimentFilter.addEventListener('change', updateVisualization);
+  visType.addEventListener('change', updateVisualization);
+
+  resetButton.addEventListener('click', function() {
+    variableFilter.value = 'qgdp';
+    experimentFilter.value = 'us_all';
+    visType.value = 'map';
+    updateVisualization();
+  });
+
+  updateVisualization();
+});
+
+/* === Toggle Aggregation Table Visibility === */
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.toggle-table-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      const targetId = button.getAttribute('data-target');
+      const showText = button.getAttribute('data-show') || 'Show';
+      const hideText = button.getAttribute('data-hide') || 'Hide';
+      const target = document.getElementById(targetId);
+
+      if (target) {
+        const isHidden = target.style.display === 'none';
+        target.style.display = isHidden ? 'block' : 'none';
+        button.textContent = isHidden ? hideText : showText;
+      }
+    });
+  });
+});
+</script> <style>.l-page{width:100%;max-width:1400px;margin:0 auto}iframe{width:100%;height:600px;border:1px solid var(--global-divider-color);border-radius:5px;background-color:var(--global-card-bg-color);box-shadow:0 2px 10px rgba(0,0,0,0.1)}@media(max-width:1024px){iframe{height:500px}}@media(max-width:768px){iframe{height:400px}}@media(max-width:480px){iframe{height:320px}}.filter-bar{width:100%;max-width:1400px;margin:0 auto 20px auto;background-color:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:5px;box-shadow:0 2px 10px rgba(0,0,0,0.1);padding:15px}.filter-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-start;gap:1.5rem}.filter-group{display:flex;align-items:center;gap:.5rem}.filter-row label{font-size:clamp(0.85rem,2vw,1rem);font-weight:bold;color:var(--global-text-color);margin:0}.filter-row select,.filter-row button{font-size:clamp(0.85rem,2vw,1rem);padding:.4em .8em;border:1px solid var(--global-divider-color);border-radius:5px;background-color:var(--global-card-bg-color);color:var(--global-text-color);cursor:pointer}table.dataTable th,table.dataTable td{font-size:clamp(0.8rem,2vw,0.95rem);text-align:left;vertical-align:middle;padding:8px 10px}@media(max-width:600px){table.dataTable th,table.dataTable td{padding:6px 6px}}</style>]]></content><author><name>Pattawee Puangchit</name></author><category term="cge-model"/><category term="data-visualization"/><category term="gtap"/><category term="trade-policy"/><category term="trump-liberation-day"/><category term="trump-tariff"/><category term="trade-war"/><category term="international-trade"/><category term="Python"/><category term="JavaScript"/><category term="HTML/CSS"/><summary type="html"><![CDATA[Standard GTAP CGE simulation of the 2025 U.S. reciprocal tariff measures]]></summary></entry><entry><title type="html">U.S. Reciprocal Tariff Measures Monitoring (2025)</title><link href="https://www.pattawee-pp.com/blog/2025/us-reciprocal-tariff-measures/" rel="alternate" type="text/html" title="U.S. Reciprocal Tariff Measures Monitoring (2025)"/><published>2025-04-06T00:00:00+00:00</published><updated>2025-04-06T00:00:00+00:00</updated><id>https://www.pattawee-pp.com/blog/2025/us-reciprocal-tariff-measures</id><content type="html" xml:base="https://www.pattawee-pp.com/blog/2025/us-reciprocal-tariff-measures/"><![CDATA[<h2 id="program--data-source">Program &amp; Data Source</h2> <div class="data-source" style="max-width: 100%; margin: 0 auto; padding: 0 1rem;"> <table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; "> <caption style="caption-side: top; color: var(--global-text-color); text-align: left; font-weight: bold; margin-bottom: 10px;"> Summary of data sources used in this visualization. </caption> <thead> <tr style="background-color: var(--global-card-bg-color);"> <th style="text-align: left; padding: 8px; border-top: 2px solid var(--global-divider-color); border-bottom: 2px solid var(--global-divider-color);">Data</th> <th style="text-align: left; padding: 8px; border-top: 2px solid var(--global-divider-color); border-bottom: 2px solid var(--global-divider-color);">Year of Data</th> <th style="text-align: left; padding: 8px; border-top: 2px solid var(--global-divider-color); border-bottom: 2px solid var(--global-divider-color);">Source</th> </tr> </thead> <tbody> <tr> <td style="padding: 8px; border-bottom: 1px solid var(--global-divider-color);">Trade Data</td> <td style="padding: 8px; border-bottom: 1px solid var(--global-divider-color);">2024</td> <td style="padding: 8px; border-bottom: 1px solid var(--global-divider-color);"> <a href="https://comtradeplus.un.org/TradeFlow" target="_blank">UN Comtrade (USA as reporter)</a> </td> </tr> <tr> <td style="padding: 8px; border-bottom: 1px solid var(--global-divider-color);">Reciprocal Tariff</td> <td style="padding: 8px; border-bottom: 1px solid var(--global-divider-color);">April 2025</td> <td style="padding: 8px; border-bottom: 1px solid var(--global-divider-color);"> <a href="https://www.whitehouse.gov/wp-content/uploads/2025/04/Annex-I.pdf" target="_blank">The White House</a> </td> </tr> </tbody> </table> </div> <p>All visualizations and tables were created using Python for data processing and automation, Folium and GeoJSON for interactive mapping, JavaScript for dynamic tooltips and filters, and HTML/CSS for responsive, publication-ready presentation.</p> <h2 id="interactive-us-reciprocal-tariff-map">Interactive U.S. Reciprocal Tariff Map</h2> <div class="filter-bar"> <div class="filter-row"> <div class="filter-group"> <label for="date-filter">Date:</label> <select id="date-filter"> <option value="apr-12" selected="">Apr-12</option> <option value="apr-08">Apr-08</option> </select> </div> <div class="filter-group"> <label for="aggregation-filter">Aggregation:</label> <select id="aggregation-filter"> <option value="all" selected="">All</option> <option value="rest_of_world">Rest Of World</option> <option value="south_asia">South Asia</option> <option value="middle_east_and_north_africa">Middle East And North Africa</option> <option value="latin_america">Latin America</option> <option value="oceania">Oceania</option> <option value="western_europe">Western Europe</option> <option value="sub-saharan_africa">Sub-Saharan Africa</option> <option value="east_asia">East Asia</option> <option value="north_america">North America</option> <option value="southeast_asia">Southeast Asia</option> </select> </div> <div class="filter-group"> <label for="retaliation_status-filter">Retaliation Status:</label> <select id="retaliation_status-filter"> <option value="all" selected="">All</option> <option value="no_retal">No Retal</option> <option value="retal">Retal</option> </select> </div> <button id="recenter-map">Reset View</button> </div> </div> <div style="position: relative;"> <div class="l-page"> <iframe id="map-frame" loading="eager" src="/assets/blog/2025-04-06-us-reciprocal-tariff-measures/apr-12_all_aggregation_all_retaliation_status_map.html" frameborder="0" scrolling="no" style="border: 1px solid var(--global-divider-color); border-radius: 5px; background-color: var(--global-card-bg-color); box-shadow: 0 2px 10px rgba(0,0,0,0.1);"> </iframe> </div> </div> <p><br/></p> <h2 id="data-table">Data Table</h2> <div class="table-container" style="margin: 30px 0;"> <iframe id="table-frame" loading="lazy" src="/assets/blog/2025-04-06-us-reciprocal-tariff-measures/apr-12_all_aggregation_all_retaliation_status_table.html" frameborder="0" scrolling="auto" style="border: none; border-radius: 5px; background-color: var(--global-card-bg-color); box-shadow: 0 2px 10px rgba(0,0,0,0.1);"> </iframe> </div> <h2 id="summary-of-the-reciprocal-tariff-announcement">Summary of the Reciprocal Tariff Announcement</h2> <p>According to the <a href="https://www.whitehouse.gov/presidential-actions/2025/04/regulating-imports-with-a-reciprocal-tariff-to-rectify-trade-practices-that-contribute-to-large-and-persistent-annual-united-states-goods-trade-deficits/">White House statement issued on April 2, 2025</a>, the United States will implement a reciprocal tariff policy to address persistent trade imbalances, non-reciprocal tariff structures, and the erosion of domestic manufacturing capacity. These new tariffs apply in addition to existing duties and other charges.</p> <h3 id="all-countries-except-as-otherwise-noted">All Countries (Except as Otherwise Noted)</h3> <ul> <li>A 10 percent ad valorem duty will apply to all imports into the United States, effective April 5, 2025.</li> </ul> <h3 id="countries-listed-in-annex-i">Countries Listed in <a href="https://www.whitehouse.gov/wp-content/uploads/2025/04/Annex-I.pdf">Annex I</a></h3> <ul> <li>Effective April 9, 2025, imports from countries identified in Annex I will be subject to higher, country-specific ad valorem rates.</li> <li>These rates are provided in the table on this page.</li> </ul> <hr/> <h2 id="exceptions-not-subject-to-the-new-tariffs">Exceptions (Not Subject to the New Tariffs)</h2> <ul> <li>Goods listed in <a href="https://www.whitehouse.gov/wp-content/uploads/2025/04/Annex-II.pdf">Annex II</a>, including: <ul> <li>Critical minerals</li> <li>Pharmaceuticals</li> <li>Energy products</li> <li>Defense-related materials</li> </ul> </li> <li>Imports already subject to duties under Section 232 of the Trade Expansion Act of 1962 (e.g., steel, aluminum, automobiles).</li> <li>Goods originating in Canada or Mexico that qualify under the United States-Mexico-Canada Agreement (USMCA).</li> <li>Low-value shipments qualifying under U.S. de minimis rules (subject to future modification).</li> <li>Goods containing at least 20 percent U.S. content; in such cases, the 10 percent duty applies only to the non-U.S. portion.</li> </ul> <hr/> <h2 id="how-the-policy-works">How the Policy Works</h2> <p>The 10 percent ad valorem duty is a fixed, additional rate imposed on top of any existing tariffs. It is not a percentage increase of the existing rate, but rather a separate and additive duty.</p> <h3 id="example-of-tariff-calculation">Example of Tariff Calculation</h3> <p>If a product currently faces a 5 percent tariff:</p> <ul> <li>Existing tariff: 5 percent</li> <li>New additional duty: 10 percent</li> <li>Total tariff applied: 15 percent</li> </ul> <p>This policy adds 10 percentage points to the total tariff rate, not a 10 percent increase of the existing rate. For instance, it does not result in a 5.5 percent tariff (which would be a 10 percent increase of 5), but a full 15 percent.</p> <script>
+document.addEventListener('DOMContentLoaded', function () {
+  const mapFrame = document.getElementById('map-frame');
+  const tableFrame = document.getElementById('table-frame');
+  const resetButton = document.getElementById('recenter-map');
+  const date_filter = document.getElementById('date-filter');
+  const aggregation_filter = document.getElementById('aggregation-filter');
+  const retaliation_status_filter = document.getElementById('retaliation_status-filter');
+
+  const basePath = '/assets/blog/2025-04-06-us-reciprocal-tariff-measures/';
+  const fallbackMap = basePath + 'apr-12_all_aggregation_all_retaliation_status_map.html';
+  const fallbackTable = basePath + 'apr-12_all_aggregation_all_retaliation_status_table.html';
+
+  function buildFilename(type) {
+    let parts = [];
+    parts.push(date_filter.value);
+    parts.push(aggregation_filter.value === 'all' ? 'all_aggregation' : aggregation_filter.value);
+    parts.push(retaliation_status_filter.value === 'all' ? 'all_retaliation_status' : retaliation_status_filter.value);
+
+    const filename = parts.join('_') + '_' + type;
+    const allSelected = parts.every(part => part.startsWith('all_'));
+    return allSelected ? 'apr-12_all_aggregation_all_retaliation_status_' + type : filename;
+  }
+
+  function fileExists(url, callback) {
+    const xhr = new XMLHttpRequest();
+    xhr.open('HEAD', url, true);
+    xhr.onload = function() {
+      callback(xhr.status >= 200 && xhr.status < 400);
+    };
+    xhr.onerror = function() {
+      callback(false);
+    };
+    xhr.send();
+  }
+
+  function tryLoadIframe(iframe, src, fallbackSrc) {
+    if (!iframe) return;
+    fileExists(src, function(exists) {
+      iframe.src = exists ? src : fallbackSrc;
+    });
+  }
+
+  function updateFrames() {
+    const mapPath = basePath + buildFilename('map.html');
+    const tablePath = basePath + buildFilename('table.html');
+    tryLoadIframe(mapFrame, mapPath, fallbackMap);
+    tryLoadIframe(tableFrame, tablePath, fallbackTable);
+  }
+
+  function debounce(func, delay) {
+    let timer;
+    return function (...args) {
+      clearTimeout(timer);
+      timer = setTimeout(() => func.apply(this, args), delay);
+    };
+  }
+
+  const debouncedUpdateFrames = debounce(updateFrames, 300);
+
+  date_filter.addEventListener('change', debouncedUpdateFrames);
+  aggregation_filter.addEventListener('change', debouncedUpdateFrames);
+  retaliation_status_filter.addEventListener('change', debouncedUpdateFrames);
+
+  resetButton.addEventListener('click', function () {
+    date_filter.selectedIndex = 0;
+    aggregation_filter.selectedIndex = 0;
+    retaliation_status_filter.selectedIndex = 0;
+    updateFrames();
+  });
+
+  updateFrames();
+});
+</script> <style>.l-page{width:100%;max-width:1400px;margin:0 auto}iframe{width:100%;height:600px;border:1px solid var(--global-divider-color);border-radius:5px;background-color:var(--global-card-bg-color);box-shadow:0 2px 10px rgba(0,0,0,0.1)}@media(max-width:1024px){iframe{height:500px}}@media(max-width:768px){iframe{height:400px}}@media(max-width:480px){iframe{height:320px}}.filter-bar{width:100%;max-width:1400px;margin:0 auto 20px auto;background-color:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:5px;box-shadow:0 2px 10px rgba(0,0,0,0.1);padding:15px}.filter-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-start;gap:1.5rem}.filter-group{display:flex;align-items:center;gap:.5rem}.filter-row label{font-size:clamp(1rem,2vw,1.2rem);font-weight:bold;color:var(--global-text-color);margin:0}.filter-row select,.filter-row button{font-size:clamp(0.9rem,2vw,1.1rem);padding:.4em .8em;border:1px solid var(--global-divider-color);border-radius:5px;background-color:var(--global-card-bg-color);color:var(--global-text-color);cursor:pointer}iframe{width:100%;height:600px;border:1px solid var(--global-divider-color);border-radius:5px;background-color:var(--global-card-bg-color);box-shadow:0 2px 10px rgba(0,0,0,0.1)}@media(max-width:1024px){iframe{height:500px}}@media(max-width:768px){iframe{height:400px}}@media(max-width:480px){iframe{height:320px}}</style>]]></content><author><name>Pattawee Puangchit</name></author><category term="data-visualization"/><category term="reciprocal-tariffs"/><category term="trade-policy"/><category term="trump-liberation-day"/><category term="trump-tariff"/><category term="tariff-monitoring"/><category term="Python"/><category term="JavaScript"/><category term="HTML/CSS"/><summary type="html"><![CDATA[Interactive visualization of U.S. reciprocal tariff policies implemented in 2025]]></summary></entry></feed>
